@@ -41,6 +41,7 @@ router.post("/update_home_page",async function(req,res){
     var sql2=`UPDATE home_page SET backgound_image = '${file_name}' WHERE user_id = 1`;
     var data = await exe(sql2);
     }
+ 
     var sql=`UPDATE home_page SET user_name_in_short = '${d.user_name_in_short}' , user_name = '${d.user_name}'  , position_1 = '${d.position_1}' , position_2 = '${d.position_2}' , position_3 = '${d.position_3}'WHERE user_id = 1 `;
     var data=await exe(sql);
    
